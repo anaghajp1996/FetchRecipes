@@ -23,7 +23,7 @@ struct RecipesList: View {
                     .navigationTitle("Recipes")
                 }
             } else {
-                Text(recipesVM.error?.localizedDescription ?? "Something went wrong, please trya gain later.")
+                ErrorScreen(message: recipesVM.error?.description ?? "Something went wrong, please try again later.")
             }
         }
         .task {
