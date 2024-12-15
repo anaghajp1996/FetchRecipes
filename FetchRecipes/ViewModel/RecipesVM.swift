@@ -17,12 +17,12 @@ class RecipesVM: ObservableObject {
             let data = try await Networking().getRequest()
             let recipes = try JSONDecoder().decode(Recipes.self, from: data)
             if recipes.recipes.isEmpty {
-                self.error = .empty("No eecipes found. Please try again.")
+                self.error = .empty
             } else {
                 self.recipes = recipes.recipes
             }
         } catch {
-            self.error = .malformed("Something went wrong. Please try again later.")
+            self.error = .malformed
         }
     }
 }
