@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		D2CDC51F2D0F746A003D44EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20128742D0CD6100086E844 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D201287B2D0CD6100086E844;
+			remoteInfo = FetchRecipes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D201287C2D0CD6100086E844 /* FetchRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CDC51B2D0F746A003D44EB /* FetchRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = FetchRecipes;
 			sourceTree = "<group>";
 		};
+		D2CDC51C2D0F746A003D44EB /* FetchRecipesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FetchRecipesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D20128792D0CD6100086E844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CDC5182D0F746A003D44EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				D201287E2D0CD6100086E844 /* FetchRecipes */,
+				D2CDC51C2D0F746A003D44EB /* FetchRecipesTests */,
 				D201287D2D0CD6100086E844 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				D201287C2D0CD6100086E844 /* FetchRecipes.app */,
+				D2CDC51B2D0F746A003D44EB /* FetchRecipesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = D201287C2D0CD6100086E844 /* FetchRecipes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2CDC51A2D0F746A003D44EB /* FetchRecipesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CDC5212D0F746A003D44EB /* Build configuration list for PBXNativeTarget "FetchRecipesTests" */;
+			buildPhases = (
+				D2CDC5172D0F746A003D44EB /* Sources */,
+				D2CDC5182D0F746A003D44EB /* Frameworks */,
+				D2CDC5192D0F746A003D44EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CDC5202D0F746A003D44EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D2CDC51C2D0F746A003D44EB /* FetchRecipesTests */,
+			);
+			name = FetchRecipesTests;
+			packageProductDependencies = (
+			);
+			productName = FetchRecipesTests;
+			productReference = D2CDC51B2D0F746A003D44EB /* FetchRecipesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -77,11 +125,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					D201287B2D0CD6100086E844 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					D2CDC51A2D0F746A003D44EB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D201287B2D0CD6100086E844;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				D201287B2D0CD6100086E844 /* FetchRecipes */,
+				D2CDC51A2D0F746A003D44EB /* FetchRecipesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D201287A2D0CD6100086E844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CDC5192D0F746A003D44EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2CDC5172D0F746A003D44EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CDC5202D0F746A003D44EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D201287B2D0CD6100086E844 /* FetchRecipes */;
+			targetProxy = D2CDC51F2D0F746A003D44EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D20128882D0CD6120086E844 /* Debug */ = {
@@ -302,6 +377,44 @@
 			};
 			name = Release;
 		};
+		D2CDC5222D0F746A003D44EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KA6DM975X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.anagha.FetchRecipesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipes";
+			};
+			name = Debug;
+		};
+		D2CDC5232D0F746A003D44EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KA6DM975X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.anagha.FetchRecipesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +432,15 @@
 			buildConfigurations = (
 				D201288B2D0CD6120086E844 /* Debug */,
 				D201288C2D0CD6120086E844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CDC5212D0F746A003D44EB /* Build configuration list for PBXNativeTarget "FetchRecipesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CDC5222D0F746A003D44EB /* Debug */,
+				D2CDC5232D0F746A003D44EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

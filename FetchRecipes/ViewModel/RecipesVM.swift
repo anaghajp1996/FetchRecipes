@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class RecipesVM: ObservableObject {
     @Published var recipes: [Recipe] = []
     @Published var error: NetworkError? = nil
