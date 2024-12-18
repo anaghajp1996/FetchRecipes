@@ -32,12 +32,11 @@ class RecipesVM: ObservableObject {
     }
     
     func convertData(from data: Data) -> Recipes? {
-        var recipes: Recipes?
         do {
             return try JSONDecoder().decode(Recipes.self, from: data)
         } catch {
             self.error = .malformed
         }
-        return recipes
+        return nil
     }
 }

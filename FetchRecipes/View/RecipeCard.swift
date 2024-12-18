@@ -23,6 +23,12 @@ struct RecipeCard: View {
                     .foregroundStyle(.gray)
             }
             Spacer()
+            if let sourceURL = recipe.sourceURL {
+                Button("", systemImage: "arrowshape.right") {
+                    UIApplication.shared.open(URL(string: sourceURL)!)
+                }
+                .foregroundStyle(.black)
+            }
         }
     }
 }
