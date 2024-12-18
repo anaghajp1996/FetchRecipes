@@ -24,9 +24,9 @@ extension NetworkError: CustomStringConvertible {
 }
 
 class Networking {
-    func getRequest() async throws -> Data {
+    func getRequest(endPoint: String) async throws -> Data {
         do {
-            let url = URL(string: Constants.endPoint)!
+            let url = URL(string: endPoint)!
             let request = URLRequest(url: url)
             let (data, _) = try await URLSession.shared.data(for: request)
             if data.isEmpty {

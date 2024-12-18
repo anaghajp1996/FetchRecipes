@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipes: Codable {
+struct Recipes: Codable, Equatable {
     var recipes: [Recipe]
 }
 
@@ -21,7 +21,7 @@ struct Recipe {
     var youtubeURL: String?
 }
 
-extension Recipe: Codable {
+extension Recipe: Codable, Equatable {
     enum CodingKeys: String, CodingKey {
         case cuisine, name, uuid
         case photoURLLarge = "photo_url_large"
